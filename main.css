@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply text-body font-sans;
+	}
+	h2 {
+		@apply text-header;
+	}
+	h4 {
+		@apply text-header font-[16px];
+	}
+}
