@@ -6,10 +6,14 @@
 	body {
 		@apply text-body font-sans;
 	}
+	h2,
+	h4 {
+		@apply text-blue-grayish-very-dark;
+	}
 	h2 {
 		@apply text-header;
 	}
 	h4 {
-		@apply text-header font-[16px];
+		@apply text-header text-subHeader;
 	}
 }
