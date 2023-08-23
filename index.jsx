@@ -1,6 +1,6 @@
 const useState = React.useState
 
-const Share = (toggleShareView) => (
+const Share = ({ toggleShareView }) => (
 	<div div className="px-8 py-[14px] rounded-b-[inherit] h-full bg-blue-grayish-very-dark flex items-center" >
 		<h3 className="tracking-[0.3rem] font-normal text-blue-grayish">
 			SHARE
@@ -24,7 +24,7 @@ const Share = (toggleShareView) => (
 	</div >
 )
 
-const Profile = (toggleShareView) => (
+const Profile = ({ toggleShareView }) => (
 	<div className="px-8 py-[14px] rounded-b-[inherit] h-full flex items-center">
 		<img
 			alt="avatar michelle"
