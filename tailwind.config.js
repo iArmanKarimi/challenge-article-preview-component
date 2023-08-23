@@ -3,15 +3,7 @@ module.exports = {
 	content: ["./index.html"],
 	theme: {
 		screens: {
-			sm: "375px",
-		},
-		colors: {
-			blue: {
-				grayish: "hsl(212, 23%, 69%)",
-				"grayish-light": "hsl(210, 46%, 95%)",
-				"grayish-very-dark": "hsl(217, 19%, 35%)",
-				"unsaturated-dark": "hsl(214, 17%, 51%)",
-			},
+			sm: "376px",
 		},
 		fontFamily: {
 			sans: ["Manrope", "sans-serif"],
@@ -21,21 +13,21 @@ module.exports = {
 				"13px",
 				{
 					fontWeight: "400",
-					lineHeight: "1.2rem",
+					lineHeight: "20px",
 				},
 			],
 			header: [
-				"2rem",
+				"15px",
 				{
 					fontWeight: "700",
-					lineHeight: "2rem",
+					lineHeight: "25px",
 				},
 			],
 			subHeader: [
-				"1.5rem",
+				"13px",
 				{
 					fontWeight: "700",
-					lineHeight: "1.5rem",
+					lineHeight: "18px",
 				},
 			],
 			subtitle: [
@@ -45,7 +37,16 @@ module.exports = {
 				},
 			],
 		},
-		extend: {},
+		extend: {
+			colors: {
+				blue: {
+					grayish: "hsl(212, 23%, 69%)",
+					"grayish-light": "hsl(210, 46%, 95%)",
+					"grayish-very-dark": "hsl(217, 19%, 35%)",
+					"unsaturated-dark": "hsl(214, 17%, 51%)",
+				},
+			},
+		},
 	},
 	plugins: [],
 };
