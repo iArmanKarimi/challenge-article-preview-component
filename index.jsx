@@ -84,13 +84,23 @@ const Content = () => (
 );
 
 const Card = () => (
-	<div className="flex flex-col justify-center rounded-xl bg-white">
+	<div className="flex flex-col sm:flex-row justify-center rounded-xl bg-white">
 		<img
 			alt="drawers"
 			src="./images/drawers.jpg"
-			className="rounded-[inherit] rounded-b-none"
+			className="rounded-xl rounded-b-none grow-0
+				sm:rounded-r-none 
+				sm:rounded-bl-xl
+				sm:object-left
+				sm:object-cover
+				sm:max-w-[280px]"
 		/>
-		<section className="rounded-b-[inherit]">
+		<section
+			className="rounded-b-[inherit]
+		sm:justify-center
+		sm:max-w-sm
+		"
+		>
 			<Content />
 			<Footer />
 		</section>
