@@ -84,7 +84,10 @@ const Content = () => (
 );
 
 const Card = () => (
-	<div className="flex flex-col sm:flex-row justify-center rounded-xl bg-white">
+	<div
+		className="flex flex-col sm:flex-row justify-center rounded-xl bg-white
+		sm:shadow-card"
+	>
 		<img
 			alt="drawers"
 			src="./images/drawers.jpg"
