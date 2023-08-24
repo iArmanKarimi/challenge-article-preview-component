@@ -46,6 +46,9 @@ module.exports = {
 					"unsaturated-dark": "hsl(214, 17%, 51%)",
 				},
 			},
+			boxShadow:{
+				card: '2px 23px 30px -9px hsl(210deg 29% 72.94% / 20%);'
+			}
 		},
 	},
 	plugins: [],
