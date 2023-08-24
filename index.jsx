@@ -37,17 +37,25 @@ const Profile = ({ toggleShareView }) => (
 			<h4 className="text-subHeader">Michelle Appleton</h4>
 			<p className="text-blue-grayish">28 Jun 2020</p>
 		</article>
-		<button
-			className="ml-auto bg-blue-grayish-light flex justify-center items-center rounded-full w-8 h-8"
+		{/* share button */}
+		<div
 			onClick={toggleShareView}
+			class="tooltip ml-auto bg-blue-grayish-light flex justify-center items-center rounded-full w-8 h-8"
 		>
+			{/* btn icon */}
 			<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
 				<path
 					fill="#6E8098"
 					d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
 				/>
 			</svg>
-		</button>
+			{/* btn tooltip */}
+			<div class="top">
+				<h3>Lorem Ipsum</h3>
+				<p>Dolor sit amet, consectetur adipiscing elit.</p>
+				<i></i>
+			</div>
+		</div>
 	</div>
 );
 
