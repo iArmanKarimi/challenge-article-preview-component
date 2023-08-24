@@ -70,7 +70,7 @@ const Footer = () => {
 };
 
 const Content = () => (
-	<article className="px-8 pt-8 pb-5">
+	<article className="px-8 pt-8 pb-5 sm:pb-0">
 		<h2 className="text-header pb-2">
 			Shift the overall look and feel by adding these wonderful touches to
 			furniture in your home
@@ -102,6 +102,7 @@ const Card = () => (
 			className="rounded-b-[inherit]
 		sm:justify-center
 		sm:max-w-sm
+		sm:pb-5
 		"
 		>
 			<Content />
