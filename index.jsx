@@ -10,7 +10,7 @@ const ShareIcons = () => (
 
 const Share = ({ toggleShareView }) => (
 	<div className="px-8 py-[14px] rounded-b-[inherit] h-full bg-blue-grayish-very-dark flex items-center">
-		<h3 className="tracking-[0.3rem] font-normal text-blue-grayish">SHARE</h3>
+		<h3 className="tracking-wide font-normal text-blue-grayish">SHARE</h3>
 		<ShareIcons />
 		<button
 			className="ml-auto bg-blue-unsaturated-dark flex justify-center items-center rounded-full w-8 h-8"
