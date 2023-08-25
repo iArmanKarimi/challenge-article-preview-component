@@ -4,7 +4,7 @@
 
 @layer base {
 	body {
-		@apply text-body font-sans;
+		@apply text-body font-sans overflow-hidden;
 	}
 	h2,
 	h4 {

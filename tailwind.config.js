@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./index.html"],
+	content: ["./index.{html,jsx}"],
 	theme: {
 		screens: {
 			sm: "376px",
@@ -37,6 +37,9 @@ module.exports = {
 				},
 			],
 		},
+		letterSpacing: {
+			wide: "0.3rem",
+		},
 		extend: {
 			colors: {
 				blue: {
@@ -45,6 +48,10 @@ module.exports = {
 					"grayish-very-dark": "hsl(217, 19%, 35%)",
 					"unsaturated-dark": "hsl(214, 17%, 51%)",
 				},
+			},
+			boxShadow: {
+				card: "2px 23px 30px -9px hsl(210deg 29% 72.94% / 20%);",
+				tooltip: "2px 10px 10px 0 hsl(210deg 29% 72.94% / 25%);",
 			},
 		},
 	},
