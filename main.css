@@ -18,14 +18,14 @@
 	}
 }
 
-.tooltip-container {
+.share-button {
 	display: inline-block;
 	position: relative;
 	text-align: left;
 	cursor: pointer;
 }
 
-.tooltip-container > svg {
+.share-button > svg {
 	position: absolute;
 	left: 0;
 	right: 0;

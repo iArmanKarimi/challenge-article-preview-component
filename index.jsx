@@ -48,7 +48,7 @@ const Profile = ({ toggleShareView }) => {
 			{/* share button */}
 			<div
 				onClick={toggleShareView ?? toggleTooltip}
-				className="tooltip-container ml-auto bg-blue-grayish-light flex justify-center items-center rounded-full w-8 h-8"
+				className="share-button ml-auto bg-blue-grayish-light flex justify-center items-center rounded-full w-8 h-8"
 			>
 				{/* btn icon */}
 				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
