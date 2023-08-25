@@ -98,8 +98,15 @@ const Profile = ({ toggleShareView }) => {
 					-translate-x-1/2 -translate-y-full hidden
 					"
 				>
-					<h3>Lorem Ipsum</h3>
-					<p>Dolor sit amet, consectetur adipiscing elit.</p>
+					<p
+						className="relative bottom-1
+						tracking-wide inline-block
+						text-blue-grayish
+						"
+					>
+						SHARE
+					</p>
+					<ShareIcons />
 					<i
 						className="absolute top-full left-1/2
 						w-[24px] h-[12px] -ml-[12px]
