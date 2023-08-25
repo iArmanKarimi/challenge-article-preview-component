@@ -69,15 +69,15 @@ const Profile = ({ toggleShareView }) => {
 };
 
 const Footer = () => {
-	const [isActive, setIsActive] = useState(false);
+	const [isShareViewActive, setShareViewActive] = useState(false);
 
 	const sm = window.matchMedia("(min-width: 376px)");
 	const toggleShareView = () => {
-		setIsActive(!isActive);
+		setShareViewActive(!isShareViewActive);
 	};
 	return (
 		<footer className="rounded-b-[inherit] h-16">
-			{isActive ? (
+			{isShareViewActive ? (
 				<Share toggleShareView={sm.matches ? null : toggleShareView} />
 			) : (
 				<Profile toggleShareView={sm.matches ? null : toggleShareView} />
