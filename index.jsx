@@ -29,9 +29,32 @@ const Share = ({ toggleShareView }) => (
 const Profile = ({ toggleShareView }) => {
 	const [tooltipDisplay, setTooltipActive] = useState(false);
 	const toggleTooltip = () => {
+		const updatedTooltipDisplay = !tooltipDisplay;
+		const svg = document.querySelector(".share-button svg path");
 		const tooltip = document.querySelector(".tooltip-top");
-		tooltip.style.display = tooltipDisplay ? "block" : "none";
-		setTooltipActive(!tooltipDisplay);
+		const shareButton = document.querySelector(".share-button");
+		// show/hide tooltip
+		tooltip.style.display = updatedTooltipDisplay ? "block" : "none";
+		// change share btn colors
+		const [primary, secondary] = [
+			"blue-grayish-light",
+			"blue-unsaturated-dark",
+		];
+		if (updatedTooltipDisplay) {
+			shareButton.classList.add(`bg-${secondary}`);
+			shareButton.classList.remove(`bg-${primary}`);
+			svg.classList.add(`fill-${primary}`);
+			svg.classList.remove(`fill-${secondary}`);
+		} else {
+			// reset colors
+			shareButton.classList.add(`bg-${primary}`);
+			shareButton.classList.remove(`bg-${secondary}`);
+			svg.classList.add(`fill-${secondary}`);
+			svg.classList.remove(`fill-${primary}`);
+		}
+		console.log(svg);
+		console.log(tooltip);
+		setTooltipActive(updatedTooltipDisplay);
 	};
 
 	return (
