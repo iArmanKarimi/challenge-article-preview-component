@@ -71,20 +71,47 @@ const Profile = ({ toggleShareView }) => {
 			{/* share button */}
 			<div
 				onClick={toggleShareView ?? toggleTooltip}
-				className="share-button ml-auto bg-blue-grayish-light flex justify-center items-center rounded-full w-8 h-8"
+				className="share-button
+				bg-blue-grayish-light ml-auto
+				relative inline-block rounded-full w-8 h-8 
+				text-left cursor-pointer
+				"
 			>
 				{/* btn icon */}
-				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="15"
+					height="13"
+					className="absolute left-0 right-0 mt-[7.5px] mx-auto"
+				>
 					<path
 						className="fill-blue-unsaturated-dark"
 						d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
 					/>
 				</svg>
 				{/* btn tooltip */}
-				<div className="tooltip-top">
+				<div
+					className="tooltip-top
+					absolute top-[-20px] left-[50%] z-10
+					min-w-[200px] px-5 py-2 rounded-xl box-border
+					text-blue-grayish bg-blue-grayish-very-dark
+					-translate-x-1/2 -translate-y-full hidden
+					"
+				>
 					<h3>Lorem Ipsum</h3>
 					<p>Dolor sit amet, consectetur adipiscing elit.</p>
-					<i></i>
+					<i
+						className="absolute top-full left-1/2
+						w-[24px] h-[12px] -ml-[12px]
+						overflow-hidden
+						after:content-[''] after:bg-blue-grayish-very-dark
+						after:absolute after:left-1/2
+						after:w-[12px] after:h-[12px]
+						after:-translate-x-1/2
+						after:-translate-y-1/2
+						after:rotate-45
+						"
+					></i>
 				</div>
 			</div>
 		</div>
