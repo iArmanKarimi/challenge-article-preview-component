@@ -23,9 +23,11 @@
 	position: relative;
 	border-bottom: 1px dotted #666;
 	text-align: left;
+	cursor: pointer;
 }
 
 .tooltip-container > svg {
+	/* TODO: center */
 	position: absolute;
 	top: 0;
 	left: 0;
