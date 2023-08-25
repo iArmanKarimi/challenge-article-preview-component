@@ -47,7 +47,8 @@ module.exports = {
 				},
 			},
 			boxShadow:{
-				card: '2px 23px 30px -9px hsl(210deg 29% 72.94% / 20%);'
+				card: '2px 23px 30px -9px hsl(210deg 29% 72.94% / 20%);',
+				tooltip: '2px 10px 10px 0 hsl(210deg 29% 72.94% / 25%);',
 			}
 		},
 	},

@@ -91,7 +91,7 @@ const Profile = ({ toggleShareView }) => {
 				</svg>
 				{/* btn tooltip */}
 				<div
-					className="tooltip-top
+					className="tooltip-top shadow-tooltip
 					absolute top-[-20px] left-[50%] z-10
 					min-w-[200px] px-5 py-2 rounded-xl box-border
 					text-blue-grayish bg-blue-grayish-very-dark
@@ -103,7 +103,7 @@ const Profile = ({ toggleShareView }) => {
 					<i
 						className="absolute top-full left-1/2
 						w-[24px] h-[12px] -ml-[12px]
-						overflow-hidden
+						overflow-hidden shadow-tooltip
 						after:content-[''] after:bg-blue-grayish-very-dark
 						after:absolute after:left-1/2
 						after:w-[12px] after:h-[12px]
