@@ -27,8 +27,8 @@ Users should be able to:
 
 | Desktop | Mobile |
 | ------- | ------ |
-|![Screenshot](./Screenshot.png)|![sm](./Screenshot-sm.png)|
-|![active](./Screenshot-active.png)|![sm-active](./Screenshot-sm-active.png)
+|![Screenshot](./screenshots/Screenshot.png)|![sm](./screenshots/Screenshot-sm.png)|
+|![active](./screenshots/Screenshot-active.png)|![sm-active](./screenshots/Screenshot-sm-active.png)
 
 ### Links
 
