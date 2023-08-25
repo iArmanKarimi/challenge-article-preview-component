@@ -1,7 +1,7 @@
 const useState = React.useState;
 
 const ShareIcons = () => (
-	<div className="flex items-center space-x-4 pl-4">
+	<div className="inline-flex items-center space-x-4 pl-4">
 		<img src="./images/icon-facebook.svg" alt="facebook" />
 		<img src="./images/icon-twitter.svg" alt="twitter" />
 		<img src="./images/icon-pinterest.svg" alt="pinterest" />
