@@ -103,7 +103,7 @@ const Profile = ({ toggleShareView }) => {
 					<i
 						className="absolute top-full left-1/2
 						w-[24px] h-[12px] -ml-[12px]
-						overflow-hidden shadow-tooltip
+						overflow-hidden
 						after:content-[''] after:bg-blue-grayish-very-dark
 						after:absolute after:left-1/2
 						after:w-[12px] after:h-[12px]
