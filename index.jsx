@@ -93,8 +93,8 @@ const Profile = ({ toggleShareView }) => {
 				<div
 					className="tooltip-top shadow-tooltip
 					absolute top-[-20px] left-[50%] z-10
-					min-w-[200px] px-5 py-2 rounded-xl box-border
-					text-blue-grayish bg-blue-grayish-very-dark
+					min-w-[250px] h-[50px] px-[38px] py-[15px] rounded-lg box-border
+					bg-blue-grayish-very-dark
 					-translate-x-1/2 -translate-y-full hidden
 					"
 				>
