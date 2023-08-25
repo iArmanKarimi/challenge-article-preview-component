@@ -28,7 +28,7 @@ const Share = ({ toggleShareView }) => (
 
 const Profile = ({ toggleShareView }) => {
 	const showTooltip = () =>
-		(document.querySelector(".tooltip-top")?.style.display = "block");
+		(document.querySelector(".tooltip-top").style.display = "block");
 
 	return (
 		<div className="px-8 py-[14px] rounded-b-[inherit] h-full flex items-center">
@@ -44,7 +44,7 @@ const Profile = ({ toggleShareView }) => {
 			{/* share button */}
 			<div
 				onClick={toggleShareView ?? showTooltip}
-				class="tooltip-container ml-auto bg-blue-grayish-light flex justify-center items-center rounded-full w-8 h-8"
+				className="tooltip-container ml-auto bg-blue-grayish-light flex justify-center items-center rounded-full w-8 h-8"
 			>
 				{/* btn icon */}
 				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
@@ -54,7 +54,7 @@ const Profile = ({ toggleShareView }) => {
 					/>
 				</svg>
 				{/* btn tooltip */}
-				<div class="tooltip-top">
+				<div className="tooltip-top">
 					<h3>Lorem Ipsum</h3>
 					<p>Dolor sit amet, consectetur adipiscing elit.</p>
 					<i></i>
