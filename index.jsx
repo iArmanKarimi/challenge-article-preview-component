@@ -27,8 +27,12 @@ const Share = ({ toggleShareView }) => (
 );
 
 const Profile = ({ toggleShareView }) => {
-	const showTooltip = () =>
-		(document.querySelector(".tooltip-top").style.display = "block");
+	const [tooltipDisplay, setTooltipActive] = useState(false);
+	const toggleTooltip = () => {
+		const tooltip = document.querySelector(".tooltip-top");
+		tooltip.style.display = tooltipDisplay ? "block" : "none";
+		setTooltipActive(!tooltipDisplay);
+	};
 
 	return (
 		<div className="px-8 py-[14px] rounded-b-[inherit] h-full flex items-center">
@@ -43,7 +47,7 @@ const Profile = ({ toggleShareView }) => {
 			</article>
 			{/* share button */}
 			<div
-				onClick={toggleShareView ?? showTooltip}
+				onClick={toggleShareView ?? toggleTooltip}
 				className="tooltip-container ml-auto bg-blue-grayish-light flex justify-center items-center rounded-full w-8 h-8"
 			>
 				{/* btn icon */}
